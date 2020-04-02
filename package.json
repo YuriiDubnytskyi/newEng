@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "heroku-postbuild": "cd my-app && npm install && npm run build"
+    "heroku-postbuild": "cd my-app && npm install && npm start"
   },
   "engines": {
     "node": "12.16.x"
