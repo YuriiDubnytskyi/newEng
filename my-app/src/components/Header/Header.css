@@ -1,0 +1,11 @@
+#navbar-toggle-cbox:checked ~ .collapse {
+    display: block;
+}
+#navbar-toggle-cbox,.navbar-toggler-icon {
+    display:none
+}
+@media screen and (max-width: 992px) {
+    .navbar-toggler-icon {
+        display:block
+    }
+}

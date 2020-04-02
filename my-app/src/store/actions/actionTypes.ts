@@ -1,0 +1,15 @@
+export const LOGIN = 'LOGIN';
+export const GET_BOOKS = "GET_BOOKS";
+export const SET_SHOW_BOOKS = "SET_SHOW_BOOKS";
+export const GET_UNITS = "GET_UNITS";
+export const SET_SHOW_UNITS = "SET_SHOW_UNITS";
+export const GET_WORDS = "GET_WORDS";
+export const SMART = "SMART";
+export const TABLET = "TABLET";
+export const LAPTOP = "LAPTOP";
+export const LARGE = "LARGE";
+export const PREW = "PREW";
+export const NEXT = "NEXT";
+export const RESET = "RESET";
+export const KEY_UNIT = "KEY_UNIT";
+export const KEY_WORDS = "KEY_WORDS";
