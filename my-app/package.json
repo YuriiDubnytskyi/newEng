@@ -26,9 +26,6 @@
     "translate-api": "^0.3.18",
     "typescript": "^3.7.5"
   },
-  "resolutions": {
-     "@babel/preset-env": "7.5.5"
-  },
   "proxy": "http://localhost:5000",
   "scripts": {
     "start": "react-scripts start",
