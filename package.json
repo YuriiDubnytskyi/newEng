@@ -15,8 +15,7 @@
     "nodemon": "^1.19.1"
   },
   "scripts": {
-    "start": "node index.js",
-    "heroku-postbuild": "cd my-app && npm install && npm run build"
+    "start": "node index.js"
   },
   "engines": {
     "node": "12.16.x"
