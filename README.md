@@ -14,7 +14,7 @@ Admin have a CRU (create,read,update) service:
  
  # Start program
  
-1. `clone repositories`
+1. `clone repository`
 2. `npm install`
 3. `node index` start server
 4. `cd my-app`
