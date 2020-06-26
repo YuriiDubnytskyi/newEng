@@ -79,8 +79,11 @@ const units = ( state:IreduceUnits = initialState, action:any ) => {
             });
         case actionTypes.RESET:
             return updateObject(state,{
-                indexEnd:0,
-                indexStart:0
+                fullUnits:[],
+                showUniting:[],
+                indexEnd:6,
+                indexStart:0,
+                keyUnit:0
             });
         case actionTypes.KEY_UNIT:
             return updateObject(state,{

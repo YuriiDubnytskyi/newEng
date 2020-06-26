@@ -1,14 +1,21 @@
-import React ,{FC}from 'react';
+import React ,{FC,useEffect}from 'react';
 import "./BooksPage.css"
 import CarouselBooks from "./CarouselBooks/CarouselBooks";
 import {NavLink} from "react-router-dom"
-
+import { bindActionCreators } from "redux";
+import { reset} from "../../store/actions/actions";
+import {connect} from "react-redux";
+import {IreduceBooks} from "../../interfaces/IreduceBooks";
 type BooksPageProps = {
     isAdmin:boolean;
+    reset:() => {type:string}
 }
 
 const BooksPage:FC<BooksPageProps> = (props:BooksPageProps) => {
     const isAdmin:boolean=props.isAdmin;
+    useEffect(()=>{
+        props.reset()
+    },[]);
     return (
         <div className="main-content">
             <div className="container mt-5">
@@ -30,5 +37,21 @@ const BooksPage:FC<BooksPageProps> = (props:BooksPageProps) => {
         </div>
     )
 };
+const mapStateToProps = ( state:{ books:IreduceBooks } ) => {
+    return {
+        state: state.books
+    }
+};
 
-export default BooksPage
+
+const mapDispatchToProps = (dispatch:any) => {
+    return {
+        dispatch,
+        ...bindActionCreators({
+            reset
+        }, dispatch)
+    }
+};
+
+
+export default connect(mapStateToProps,mapDispatchToProps)(BooksPage)
